@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* 添加字体样式 */
+        }
+    .container {
+        width: 80%;
+        max-width: 1400px;
+        height: 700px;
+        border: 1px solid grey;
+        background-image: linear-gradient(to right, white 50%, grey 50%);
+        border-radius: 50px;
+        box-shadow: 10px 10px 45px rgb(58, 56, 56);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .content-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        color: grey;
+        text-indent: 100px;
+    }
+
+    h2 {
+        color: grey;
+        font-size: 2rem; /* 使用相对单位，确保在不同设备上显示一致 */
+        margin-top: 4rem; /* 添加上边距，调整与内容的间距 */
+        border-bottom: 1px solid grey; /* 添加底部边框，增加装饰效果 */
+        width: 100%; /* 使分隔线占满宽度 */
+        line-height: 0.1rem; /* 调整行高，使分隔线更细 */
+        margin-bottom: 2rem; /* 添加下边距，调整与内容的间距 */
+    }
+
+    /* 添加其他CSS样式 */
+    p,
+    p1,
+    p2,
+    p3 {
+        color: grey;
+        margin: 0; /* 重置段落的默认边距 */
+    }
+
+    input[type="text"] {
+        margin-top: 0.5rem; /* 调整文本输入框的上边距 */
+        padding: 0.5rem; /* 添加内边距，增加文本输入框的可视性 */
+        width: 100%; /* 让文本输入框占满容器的宽度 */
+    }
+
+    #img0,
+    #img1,
+    #img2 {
+        max-width: 100%; /* 限制图片的最大宽度 */
+        height: auto; /* 保持图片宽高比 */
+        margin-bottom: 1rem; /* 添加下边距，调整与其他内容的间距 */
+    }
+
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* 修改对齐方式，使内容靠左对齐 */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-left">
+            <img src="phone.jpg" id="img0">
+            <img src="email.jpg" id="img1">
+            <img src="map.jpg" id="img2">
+        </div>
+        <div class="content-right">
+            <p>Your name:</p>
+            <input type="text" id="myinput3" placeholder="Enter your name">
+            <p1>Your age:</p1>
+            <input type="text" id="myinput4" placeholder="Enter your age">
+            <p2>Message:</p2>
+            <input type="text" id="myinput5" placeholder="Enter your message">
+            <br>
+            <input type="text" placeholder="Phone number" id="myinput0">
+            <br>
+            <input type="text" placeholder="Email" id="myinput1">
+            <br>
+            <input type="text" placeholder="Address" id="myinput2">
+            <br>
+            <br>
+            <p3><button>Submit</button></p3> <!-- 使用按钮替代纯文本 -->
+            <br>
+            <br>
+            <h2>--------------------------</h2>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
